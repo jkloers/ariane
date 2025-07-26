@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "start", "goût", "fraises", "rappeler", "vieux chalet",
     "l’été", "elle", "jamais", "entier", "étranger",
     "visage", "fraîcheur", "chambre"
-  ]);
+  ]); //devenu inutile ? 
 
   const visitedNodes = new Set();
   const historyStack = [];
@@ -61,34 +61,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const displayStory = (data) => {
     storyDiv.innerHTML = '';
 
-    const regex = /<([^>]+)>/g;
-    let lastIndex = 0;
-    let match;
+    // Découpe le texte en mots
+    const words = data.text.split(/\s+/);
 
-    while ((match = regex.exec(data.text)) !== null) {
-      const textBefore = data.text.substring(lastIndex, match.index);
-      if (textBefore) {
-        storyDiv.appendChild(document.createTextNode(textBefore));
-      }
-
-      const word = match[1];
-      const nextNode = data.options?.[word] || null;
-
+    words.forEach((word, idx) => {
       const span = document.createElement('span');
       span.className = 'clickable';
       span.textContent = word;
+
+      // Si le mot correspond à une option, ajoute le dataset.node
+      const nextNode = data.options?.[word] || null;
       if (nextNode) {
         span.dataset.node = nextNode;
       }
+
       storyDiv.appendChild(span);
-
-      lastIndex = regex.lastIndex;
-    }
-
-    const remaining = data.text.substring(lastIndex);
-    if (remaining) {
-      storyDiv.appendChild(document.createTextNode(remaining));
-    }
+      // Ajoute un espace après chaque mot sauf le dernier
+      if (idx < words.length - 1) {
+        storyDiv.appendChild(document.createTextNode(' '));
+      }
+    });
   };
 
   storyDiv.addEventListener('click', (e) => {
