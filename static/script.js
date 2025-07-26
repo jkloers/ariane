@@ -1,51 +1,93 @@
 document.addEventListener('DOMContentLoaded', () => {
   const storyDiv = document.getElementById('story');
+  const controlsDiv = document.getElementById('controls');
 
   let currentNode = 'start';
+
+  const allNodes = new Set([
+    "start", "goût", "fraises", "rappeler", "vieux chalet",
+    "l’été", "elle", "jamais", "entier", "étranger",
+    "visage", "fraîcheur", "chambre"
+  ]);
+
+  const visitedNodes = new Set();
   const historyStack = [];
 
-  // Créer et insérer le bouton "Retour"
-  const backBtn = document.createElement('button');
-  backBtn.textContent = '← Retour';
-  backBtn.style.marginBottom = '10px';
-  backBtn.disabled = true; // désactivé au début
-  storyDiv.parentNode.insertBefore(backBtn, storyDiv);
+  const updateVisitedNodes = () => {
+    console.log("Visited nodes:", [...visitedNodes]);
+    console.log("Navigation history:", [...historyStack]);
+  };
+
+  const addReturnButton = () => {
+    controlsDiv.innerHTML = '';
+    const btn = document.createElement('button');
+    btn.textContent = 'Return to Previous Node';
+    btn.disabled = historyStack.length === 0; // désactive si pile vide
+    btn.onclick = () => {
+      const prevNode = historyStack.pop();
+      if (prevNode) {
+        loadNode(prevNode);
+      }
+    };
+    controlsDiv.appendChild(btn);
+  };
 
   const loadNode = async (nodeName) => {
+    if (nodeName !== 'end') {
+      if (currentNode !== nodeName) {
+        historyStack.push(currentNode);
+      }
+      currentNode = nodeName;  // déplacer ici la mise à jour
+      visitedNodes.add(nodeName);
+    }
+
+    if (allNodes.size === visitedNodes.size) {
+      nodeName = 'end';
+    }
+
     try {
       const res = await fetch(`/continue?node=${encodeURIComponent(nodeName)}`);
-      if (!res.ok) throw new Error('Erreur réseau');
-
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
       const data = await res.json();
-      storyDiv.innerHTML = '';
+      displayStory(data);
+    } catch (error) {
+      storyDiv.innerHTML = `<p class="error">Failed to load story segment: ${error.message}</p>`;
+    }
 
-      const regex = /<([^>]+)>/g;
-      let lastIndex = 0;
-      let match;
+    updateVisitedNodes();
+    addReturnButton();
+  };
 
-      while ((match = regex.exec(data.text)) !== null) {
-        const textBefore = data.text.substring(lastIndex, match.index);
-        if (textBefore) storyDiv.appendChild(document.createTextNode(textBefore));
+  const displayStory = (data) => {
+    storyDiv.innerHTML = '';
 
-        const word = match[1];
-        const span = document.createElement('span');
-        span.className = 'clickable';
-        span.textContent = word;
-        span.dataset.node = data.options[word] || null;
-        storyDiv.appendChild(span);
+    const regex = /<([^>]+)>/g;
+    let lastIndex = 0;
+    let match;
 
-        lastIndex = regex.lastIndex;
+    while ((match = regex.exec(data.text)) !== null) {
+      const textBefore = data.text.substring(lastIndex, match.index);
+      if (textBefore) {
+        storyDiv.appendChild(document.createTextNode(textBefore));
       }
 
-      const remaining = data.text.substring(lastIndex);
-      if (remaining) storyDiv.appendChild(document.createTextNode(remaining));
+      const word = match[1];
+      const nextNode = data.options?.[word] || null;
 
-      currentNode = nodeName;
-      backBtn.disabled = historyStack.length === 0;
+      const span = document.createElement('span');
+      span.className = 'clickable';
+      span.textContent = word;
+      if (nextNode) {
+        span.dataset.node = nextNode;
+      }
+      storyDiv.appendChild(span);
 
-    } catch (err) {
-      storyDiv.innerHTML = "Erreur lors du chargement de l'histoire.";
-      console.error(err);
+      lastIndex = regex.lastIndex;
+    }
+
+    const remaining = data.text.substring(lastIndex);
+    if (remaining) {
+      storyDiv.appendChild(document.createTextNode(remaining));
     }
   };
 
@@ -53,16 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target.classList.contains('clickable')) {
       const nextNode = e.target.dataset.node;
       if (nextNode) {
-        historyStack.push(currentNode);
-        loadNode(nextNode);
+        loadNode(nextNode); // ne pas modifier currentNode ici
       }
-    }
-  });
-
-  backBtn.addEventListener('click', () => {
-    if (historyStack.length > 0) {
-      const previousNode = historyStack.pop();
-      loadNode(previousNode);
     }
   });
 

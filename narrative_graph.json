@@ -1,11 +1,10 @@
 {
   "start": {
-    "text": "Le <goût> des <fraises> lui <rappelait> <toujours> le <vieux chalet>.",
+    "text": "Le <goût> des <fraises> lui <rappelait> toujours le <vieux chalet>.",
     "options": {
       "goût": "goût",
       "fraises": "fraises",
       "rappelait": "rappeler",
-      "toujours": "toujours",
       "vieux chalet": "vieux chalet"
     }
   },
@@ -34,7 +33,7 @@
     "text": "Il faisait toujours <frais> dans le chalet, sauf dans la <chambre du grenier>.",
     "options": {
       "frais": "fraîcheur",
-      "chambre": "chambre"
+      "chambre du grenier": "chambre"
     }
   },
   "l’été": {
@@ -42,11 +41,11 @@
     "options": {}
   },
   "elle": {
-    "text": "Depuis combien de temps n’avait-il pas pensé à <elle> ? Des mois, des années ?",
+    "text": "Depuis combien de temps n’avait-il pas pensé à elle ? Des mois, des années ?",
     "options": {}
   },
   "jamais": {
-    "text": "Parfois, il lui semblait difficile de croire qu’il ne la reverrai <jamais> plus.",
+    "text": "Parfois, il lui semblait difficile de croire qu’il ne la reverrai jamais plus.",
     "options": {}
   },
   "entier": {
@@ -54,7 +53,7 @@
     "options": {}
   },
   "étranger": {
-    "text": "Ainsi les gens que l’on quitte finissent-ils par nous devenir <étranger>.",
+    "text": "Ainsi les gens que l’on quitte finissent-ils par nous devenir étranger.",
     "options": {}
   },
   "visage": {

@@ -7,16 +7,25 @@
     .clickable {
       color: blue;
       cursor: pointer;
-      margin: 0 4px;
       text-decoration: underline;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;     /* horizontal centering */
+      align-items: center;         /* vertical centering */
+      background-color: #f9f9f9;
     }
   </style>
 </head>
 <body>
-  <h2> Ariane</h2>
-  <div id="story">
-    <!-- Le texte de l’histoire sera injecté ici par script.js -->
-  </div>
+  <div id="story"></div>
+  <div id="controls" style="margin-top: 200px;">
   <script src="/static/script.js"></script>
 </body>
 </html>
