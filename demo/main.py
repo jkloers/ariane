@@ -1,5 +1,5 @@
 import tkinter as tk
-from narrative_tree import narrative_tree
+from demo.narrative_tree import narrative_tree
 
 # 🧠 Liste des phrases précédentes pour gérer l'historique
 history_stack = []
@@ -8,8 +8,8 @@ history_stack = []
 class InteractiveFictionApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Ariane")
-        self.current_text = narrative_tree["root"]
+        self.root.title("ariane")
+        self.current_text = narrative_tree["root    "]
 
         # Zone d'affichage
         self.text_frame = tk.Frame(root)

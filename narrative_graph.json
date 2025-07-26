@@ -1,0 +1,76 @@
+{
+  "start": {
+    "text": "Le <goût> des <fraises> lui <rappelait> <toujours> le <vieux chalet>.",
+    "options": {
+      "goût": "goût",
+      "fraises": "fraises",
+      "rappelait": "rappeler",
+      "toujours": "toujours",
+      "vieux chalet": "vieux chalet"
+    }
+  },
+  "goût": {
+    "text": "D’habitude, sa mémoire s’attachait plutôt aux odeurs : chaque <été> il repensait par exemple à son parfum à <elle>.",
+    "options": {
+      "été": "l'été",
+      "elle": "elle"
+    }
+  },
+  "fraises": {
+    "text": "Il regarda de nouveau les fraises gisant dans la barquette : il ne les croquait <jamais> en <entier>.",
+    "options": {
+      "jamais": "jamais",
+      "entier": "entier"
+    }
+  },
+  "rappeler": {
+    "text": "<Étrangement> il ne se rappelait désormais moins de son <visage> que du goût des fraises sauvages.",
+    "options": {
+      "Étrangement": "étranger",
+      "visage": "visage"
+    }
+  },
+  "vieux chalet": {
+    "text": "Il faisait toujours <frais> dans le chalet, sauf dans la <chambre du grenier>.",
+    "options": {
+      "frais": "fraîcheur",
+      "chambre": "chambre"
+    }
+  },
+  "l’été": {
+    "text": "Les fraises sauvages qu’ils cueillaient ensemble en juin étaient évidemment plus sucrées et plus savoureuses que celles du supermarché qu’il dévorait en ce moment.",
+    "options": {}
+  },
+  "elle": {
+    "text": "Depuis combien de temps n’avait-il pas pensé à <elle> ? Des mois, des années ?",
+    "options": {}
+  },
+  "jamais": {
+    "text": "Parfois, il lui semblait difficile de croire qu’il ne la reverrai <jamais> plus.",
+    "options": {}
+  },
+  "entier": {
+    "text": "Il y a des choses que l’on n’est pas capable de finir soi-même.",
+    "options": {}
+  },
+  "étranger": {
+    "text": "Ainsi les gens que l’on quitte finissent-ils par nous devenir <étranger>.",
+    "options": {}
+  },
+  "visage": {
+    "text": "Avait-elle les yeux bruns ? Ou noisettes ? Ou kakis ? Impossible de se souvenir.",
+    "options": {}
+  },
+  "fraîcheur": {
+    "text": "Les jours d’été, ils pouvaient y passer toute l’après-midi ensemble à ne rien faire, abrités de la chaleur.",
+    "options": {}
+  },
+  "chambre": {
+    "text": "Il repensa soudain à tous les moments qu’ils avaient passés dans le lit craquelant.",
+    "options": {}
+  },
+  "end" : {
+    "text": "La dernière fraise lui glissa dans la gorge. Cela faisait si longtemps déjà. Peut-être était-il temps de lui écrire ?",
+    "options": {}
+  }
+}
