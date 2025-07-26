@@ -16,16 +16,38 @@
     }
 
     body {
-      display: flex;
-      justify-content: center;     /* horizontal centering */
-      align-items: center;         /* vertical centering */
       background-color: #f9f9f9;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* vertical centering */
+      min-height: 100vh;
+    }
+
+    #story {
+      margin-bottom: 32px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    #controls {
+      margin-top: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <div id="story"></div>
-  <div id="controls" style="margin-top: 200px;">
+  <div id="container">
+    <div id="story"></div>
+    <div id="controls">
+      <!-- The button will be injected here -->
+    </div>
+  </div>
   <script src="/static/script.js"></script>
 </body>
 </html>

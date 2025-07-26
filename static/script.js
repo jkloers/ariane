@@ -26,18 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.onclick = () => {
       const prevNode = historyStack.pop();
       if (prevNode) {
-        loadNode(prevNode);
+        loadNode(prevNode, true); // <-- indique qu'on revient en arrière
       }
     };
     controlsDiv.appendChild(btn);
   };
 
-  const loadNode = async (nodeName) => {
+  const loadNode = async (nodeName, isReturn = false) => {
     if (nodeName !== 'end') {
-      if (currentNode !== nodeName) {
+      if (!isReturn && currentNode !== nodeName) {
         historyStack.push(currentNode);
       }
-      currentNode = nodeName;  // déplacer ici la mise à jour
+      currentNode = nodeName;
       visitedNodes.add(nodeName);
     }
 
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target.classList.contains('clickable')) {
       const nextNode = e.target.dataset.node;
       if (nextNode) {
-        loadNode(nextNode); // ne pas modifier currentNode ici
+        loadNode(nextNode); // navigation normale, isReturn=false par défaut
       }
     }
   });
