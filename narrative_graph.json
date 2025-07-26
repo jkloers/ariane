@@ -11,7 +11,7 @@
   "goût": {
     "text": "D’habitude, sa mémoire s’attachait plutôt aux odeurs : chaque <été> il repensait par exemple à son parfum à <elle>.",
     "options": {
-      "été": "l'été",
+      "été": "été",
       "elle": "elle"
     }
   },
@@ -36,7 +36,7 @@
       "chambre du grenier": "chambre"
     }
   },
-  "l’été": {
+  "été": {
     "text": "Les fraises sauvages qu’ils cueillaient ensemble en juin étaient évidemment plus sucrées et plus savoureuses que celles du supermarché qu’il dévorait en ce moment.",
     "options": {}
   },
