@@ -50,4 +50,21 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   storyDiv.addEventListener('click', (e) => {
-    if (e.target.classList.contains('c
+    if (e.target.classList.contains('clickable')) {
+      const nextNode = e.target.dataset.node;
+      if (nextNode) {
+        historyStack.push(currentNode);
+        loadNode(nextNode);
+      }
+    }
+  });
+
+  backBtn.addEventListener('click', () => {
+    if (historyStack.length > 0) {
+      const previousNode = historyStack.pop();
+      loadNode(previousNode);
+    }
+  });
+
+  loadNode(currentNode);
+});
