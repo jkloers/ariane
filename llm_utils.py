@@ -1,27 +1,25 @@
 import os
 from dotenv import load_dotenv
-from mistralai.client import MistralClient
+from mistralai import Mistral
 
 load_dotenv()
 
-def format_response(text: str, max_length: int = 280) -> str:
-    text = ' '.join(text.split())
-    text = text[:max_length - 3] + "..." if len(text) > max_length else text
-    ngraph_input = text.json()
-    return ngraph_input
+ariane_agent_id = "ag:8781a9ee:20250810:ariane:182d3d86"
 
-def generate_next_phrase(user_input: str) -> str:
-    api_key = os.getenv("MISTRAL_API_KEY")
-    client = MistralClient(api_key=api_key)
+API_KEY = os.getenv("MISTRAL_API_KEY")
+if not API_KEY:
+    raise RuntimeError("MISTRAL_API_KEY non défini")
 
-    try:
-        chat_response = client.chat(
-            model="mistral-tiny",
-            messages=[{"role": "user", "content": user_input}],
-        )
-        response_text = chat_response.choices[0].message.content
-        return format_response(response_text)
-    except Exception as e:
-        return f"Error getting LLM response: {str(e)}"
-    
-    
+client = Mistral(api_key=API_KEY)
+
+def generate_next_phrase_with_agent(agent_id: str, user_input: str) -> str:
+    response = client.beta.conversations.start(
+        agent_id=agent_id,
+        inputs=[{"role": "user", "content": user_input}],
+        # store=False
+    )
+    # Adapte selon la structure de la réponse retournée par l'API beta
+    return response.outputs[0].content
+
+if __name__ == "__main__":
+    print(generate_next_phrase_with_agent(ariane_agent_id, "Fraises"))
