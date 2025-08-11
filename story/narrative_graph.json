@@ -5,7 +5,7 @@
       "goût": "goût",
       "fraises": "fraises",
       "rappelait": "rappeler",
-      "vieux chalet": "vieux chalet"
+      "chalet": "chalet"
     }
   },
   "goût": {
@@ -29,11 +29,11 @@
       "visage": "visage"
     }
   },
-  "vieux chalet": {
+  "chalet": {
     "text": "Il faisait toujours frais dans le chalet, sauf dans la chambre du grenier.",
     "options": {
       "frais": "fraîcheur",
-      "chambre du grenier": "chambre"
+      "chambre": "chambre"
     }
   },
   "été": {
@@ -68,8 +68,56 @@
     "text": "Il repensa soudain à tous les moments qu’ils avaient passés dans le lit craquelant.",
     "options": {}
   },
-  "end" : {
+  "end": {
     "text": "La dernière fraise lui glissa dans la gorge. Cela faisait si longtemps déjà. Peut-être était-il temps de lui écrire ?",
+    "options": {}
+  },
+  "barquette": {
+    "text": "\"La barquette en plastique, légère et pratique, transportait son déjeuner avec simplicité.\"",
+    "options": {}
+  },
+  "sauvages.": {
+    "text": "Dans l'immensité des forêts sauvages, la nature règne en maître.",
+    "options": {}
+  },
+  "simplicité.\"": {
+    "text": "La simplicité est la sophistication suprême.",
+    "options": {}
+  },
+  "suprême.": {
+    "text": "Dans l'immensité du silence, il atteignit l'instant suprême.",
+    "options": {}
+  },
+  "chalet.": {
+    "text": "Un chalet isolé dans les montagnes, où le temps semble s'arrêter.",
+    "options": {}
+  },
+  "vieux": {
+    "text": "Le vieux chien se reposait paisiblement sous le grand chêne.",
+    "options": {}
+  },
+  "elle.": {
+    "text": "Elle brille sous le soleil de midi.",
+    "options": {}
+  },
+  "odeurs": {
+    "text": "Les odeurs du matin flottent, légères et envoûtantes.",
+    "options": {}
+  },
+  "matin": {
+    "text": "Le matin se lève, apportant avec lui une nouvelle page blanche à remplir.",
+    "options": {}
+  },
+  "blanche": {
+    "text": "Neige blanche.",
+    "options": {}
+  },
+  "Neige": {
+    "text": "La neige tombe doucement, recouvrant le sol d'un manteau blanc et silencieux.",
+    "options": {}
+  },
+  "manteau": {
+    "text": "Le manteau, ce vêtement qui enveloppe nos hivers de douceur et de mystère.",
     "options": {}
   }
 }

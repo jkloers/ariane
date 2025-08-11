@@ -1,39 +1,39 @@
 {
   "start": {
-    "text": "Le <goût> des <fraises> lui <rappelait> toujours le <vieux chalet>.",
+    "text": "Le goût des fraises lui rappelait toujours le vieux chalet.",
     "options": {
       "goût": "goût",
       "fraises": "fraises",
       "rappelait": "rappeler",
-      "vieux chalet": "vieux chalet"
+      "chalet": "chalet"
     }
   },
   "goût": {
-    "text": "D’habitude, sa mémoire s’attachait plutôt aux odeurs : chaque <été> il repensait par exemple à son parfum à <elle>.",
+    "text": "D’habitude, sa mémoire s’attachait plutôt aux odeurs : chaque été il repensait par exemple à son parfum à elle.",
     "options": {
       "été": "été",
       "elle": "elle"
     }
   },
   "fraises": {
-    "text": "Il regarda de nouveau les fraises gisant dans la barquette : il ne les croquait <jamais> en <entier>.",
+    "text": "Il regarda de nouveau les fraises gisant dans la barquette : il ne les croquait jamais en entier.",
     "options": {
       "jamais": "jamais",
       "entier": "entier"
     }
   },
   "rappeler": {
-    "text": "<Étrangement> il ne se rappelait désormais moins de son <visage> que du goût des fraises sauvages.",
+    "text": "Étrangement il ne se rappelait désormais moins de son visage que du goût des fraises sauvages.",
     "options": {
       "Étrangement": "étranger",
       "visage": "visage"
     }
   },
-  "vieux chalet": {
-    "text": "Il faisait toujours <frais> dans le chalet, sauf dans la <chambre du grenier>.",
+  "chalet": {
+    "text": "Il faisait toujours frais dans le chalet, sauf dans la chambre du grenier.",
     "options": {
       "frais": "fraîcheur",
-      "chambre du grenier": "chambre"
+      "chambre": "chambre"
     }
   },
   "été": {
@@ -68,7 +68,7 @@
     "text": "Il repensa soudain à tous les moments qu’ils avaient passés dans le lit craquelant.",
     "options": {}
   },
-  "end" : {
+  "end": {
     "text": "La dernière fraise lui glissa dans la gorge. Cela faisait si longtemps déjà. Peut-être était-il temps de lui écrire ?",
     "options": {}
   }

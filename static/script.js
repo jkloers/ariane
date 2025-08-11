@@ -4,12 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let currentNode = 'start';
 
-  const allNodes = new Set([
-    "start", "goût", "fraises", "rappeler", "vieux chalet",
-    "l’été", "elle", "jamais", "entier", "étranger",
-    "visage", "fraîcheur", "chambre"
-  ]); //devenu inutile ? 
-
   const visitedNodes = new Set();
   const historyStack = [];
 
@@ -41,9 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
       visitedNodes.add(nodeName);
     }
 
-    if (allNodes.size === visitedNodes.size) {
-      nodeName = 'end';
-    }
+    // if (allNodes.size === visitedNodes.size) {
+    //   nodeName = 'end';
+    // }
 
     try {
       const res = await fetch(`/continue?node=${encodeURIComponent(nodeName)}`);
@@ -83,11 +77,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  storyDiv.addEventListener('click', (e) => {
+  storyDiv.addEventListener('click', async (e) => {
     if (e.target.classList.contains('clickable')) {
+      const word = e.target.textContent;
       const nextNode = e.target.dataset.node;
+
       if (nextNode) {
-        loadNode(nextNode); // navigation normale, isReturn=false par défaut
+        // Navigation normale si le noeud existe déjà
+        loadNode(nextNode);
+      } else {
+        // Si le mot n'est pas dans le graphe, on appelle /expand
+        const res = await fetch('/expand', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ word })
+        });
+        if (res.ok) {
+          // On récupère la phrase générée et on l'affiche
+          const data = await res.json();
+          displayStory(data.next);
+          // Optionnel : ajoute le nouveau mot à visitedNodes, etc.
+          visitedNodes.add(word);
+          updateVisitedNodes();
+        } else {
+          storyDiv.innerHTML = "<p class='error'>Erreur lors de la génération de la phrase.</p>";
+        }
       }
     }
   });

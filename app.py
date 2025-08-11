@@ -24,12 +24,21 @@ def expand():
         return jsonify({"error": "Missing 'word' in request"}), 400
 
     if word not in narrative_graph:
+        print(f"Le mot '{word}' n'existe pas dans le graphe narratif.")
+        print("Appel au LLM pour générer la phrase suivante...")
         # Appel au LLM si le mot n’existe pas
         generated = generate_next_phrase(word)
-        narrative_graph[word] = [generated]
-        # Optionnel : persistance en écrivant dans le fichier
-        with open("narrative_graph.json", "w", encoding="utf-8") as f:
+        if not generated:
+            return jsonify({"error": "Le LLM n'a pas pu générer de phrase."}), 500
+        print(f"Phrase générée : {generated}")
+        # Ajouter le mot généré au graphe narratif
+        narrative_graph[word] = {"text": generated, "options": {}}
+
+        # Persistance dans le bon fichier
+        with open("story/narrative_graph.json", "w", encoding="utf-8") as f:
             json.dump(narrative_graph, f, indent=2, ensure_ascii=False)
+        
+        print(f"Le mot '{word}' a été ajouté au graphe narratif.")
     return jsonify({"next": narrative_graph[word]})
 
 if __name__ == '__main__':
