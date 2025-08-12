@@ -1,231 +1,100 @@
 {
-  "start": {
-    "text": "Le goût des fraises lui rappelait toujours le vieux chalet.",
-    "options": {
-      "goût": "goût",
-      "fraises": "fraises",
-      "rappelait": "rappeler",
-      "chalet": "chalet"
+  "id": "f096f5fe-76c0-4108-adde-9b7a45faa372",
+  "text": "Le goût des fraises lui rappelait toujours le vieux chalet.",
+  "options": {
+    "goût": "d6243fff-2f0b-460a-b4dd-5b64f5f28269",
+    "fraises": "dd2bcd96-a166-45b8-aec3-fbeadc77d8b3",
+    "rappelait": "21c6707f-d985-4f4a-9500-748a0af2459c",
+    "chalet": "1b8c1cc5-a275-41c0-a211-74d632b50403"
+  },
+  "children": [
+    {
+      "id": "d6243fff-2f0b-460a-b4dd-5b64f5f28269",
+      "text": "D’habitude, sa mémoire s’attachait plutôt aux odeurs : chaque été il repensait par exemple à son parfum à elle.",
+      "options": {
+        "été": "853fb2ed-04be-4b04-91ff-3f85c79be054",
+        "elle": "6ecbeaea-bdde-4366-8315-f04df3dcc308"
+      },
+      "children": [
+        {
+          "id": "853fb2ed-04be-4b04-91ff-3f85c79be054",
+          "text": "Les fraises sauvages qu’ils cueillaient ensemble en juin étaient évidemment plus sucrées et plus savoureuses que celles du supermarché qu’il dévorait en ce moment.",
+          "options": {},
+          "children": []
+        },
+        {
+          "id": "6ecbeaea-bdde-4366-8315-f04df3dcc308",
+          "text": "Depuis combien de temps n’avait-il pas pensé à elle ? Des mois, des années ?",
+          "options": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "dd2bcd96-a166-45b8-aec3-fbeadc77d8b3",
+      "text": "Il regarda de nouveau les fraises gisant dans la barquette : il ne les croquait jamais en entier.",
+      "options": {
+        "jamais": "6d8913f6-e67e-4e1a-9527-4bd50d3736de",
+        "entier": "ab7d8595-6593-4ae9-8f86-b3cc89e3bb3b"
+      },
+      "children": [
+        {
+          "id": "6d8913f6-e67e-4e1a-9527-4bd50d3736de",
+          "text": "Parfois, il lui semblait difficile de croire qu’il ne la reverrai jamais plus.",
+          "options": {},
+          "children": []
+        },
+        {
+          "id": "ab7d8595-6593-4ae9-8f86-b3cc89e3bb3b",
+          "text": "Il y a des choses que l’on n’est pas capable de finir soi-même.",
+          "options": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "21c6707f-d985-4f4a-9500-748a0af2459c",
+      "text": "Étrangement il ne se rappelait désormais moins de son visage que du goût des fraises sauvages.",
+      "options": {
+        "Étrangement": "b59db2e4-ab3f-43c0-a371-08e0f2bc2286",
+        "visage": "e64172be-506e-4eb6-b6f0-eb0456be406a"
+      },
+      "children": [
+        {
+          "id": "b59db2e4-ab3f-43c0-a371-08e0f2bc2286",
+          "text": "Ainsi les gens que l’on quitte finissent-ils par nous devenir étranger.",
+          "options": {},
+          "children": []
+        },
+        {
+          "id": "e64172be-506e-4eb6-b6f0-eb0456be406a",
+          "text": "Avait-elle les yeux bruns ? Ou noisettes ? Ou kakis ? Impossible de se souvenir.",
+          "options": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "1b8c1cc5-a275-41c0-a211-74d632b50403",
+      "text": "Il faisait toujours frais dans le chalet, sauf dans la chambre du grenier.",
+      "options": {
+        "frais": "748ab3e5-0780-410a-9e43-80616c13cad9",
+        "chambre": "8d6e3945-ad75-4e99-9ccb-1b8f53405476"
+      },
+      "children": [
+        {
+          "id": "748ab3e5-0780-410a-9e43-80616c13cad9",
+          "text": "Les jours d’été, ils pouvaient y passer toute l’après-midi ensemble à ne rien faire, abrités de la chaleur.",
+          "options": {},
+          "children": []
+        },
+        {
+          "id": "8d6e3945-ad75-4e99-9ccb-1b8f53405476",
+          "text": "Il repensa soudain à tous les moments qu’ils avaient passés dans le lit craquelant.",
+          "options": {},
+          "children": []
+        }
+      ]
     }
-  },
-  "goût": {
-    "text": "D’habitude, sa mémoire s’attachait plutôt aux odeurs : chaque été il repensait par exemple à son parfum à elle.",
-    "options": {
-      "été": "été",
-      "elle": "elle"
-    }
-  },
-  "fraises": {
-    "text": "Il regarda de nouveau les fraises gisant dans la barquette : il ne les croquait jamais en entier.",
-    "options": {
-      "jamais": "jamais",
-      "entier": "entier"
-    }
-  },
-  "rappeler": {
-    "text": "Étrangement il ne se rappelait désormais moins de son visage que du goût des fraises sauvages.",
-    "options": {
-      "Étrangement": "étranger",
-      "visage": "visage"
-    }
-  },
-  "chalet": {
-    "text": "Il faisait toujours frais dans le chalet, sauf dans la chambre du grenier.",
-    "options": {
-      "frais": "fraîcheur",
-      "chambre": "chambre"
-    }
-  },
-  "été": {
-    "text": "Les fraises sauvages qu’ils cueillaient ensemble en juin étaient évidemment plus sucrées et plus savoureuses que celles du supermarché qu’il dévorait en ce moment.",
-    "options": {}
-  },
-  "elle": {
-    "text": "Depuis combien de temps n’avait-il pas pensé à elle ? Des mois, des années ?",
-    "options": {}
-  },
-  "jamais": {
-    "text": "Parfois, il lui semblait difficile de croire qu’il ne la reverrai jamais plus.",
-    "options": {}
-  },
-  "entier": {
-    "text": "Il y a des choses que l’on n’est pas capable de finir soi-même.",
-    "options": {}
-  },
-  "étranger": {
-    "text": "Ainsi les gens que l’on quitte finissent-ils par nous devenir étranger.",
-    "options": {}
-  },
-  "visage": {
-    "text": "Avait-elle les yeux bruns ? Ou noisettes ? Ou kakis ? Impossible de se souvenir.",
-    "options": {}
-  },
-  "fraîcheur": {
-    "text": "Les jours d’été, ils pouvaient y passer toute l’après-midi ensemble à ne rien faire, abrités de la chaleur.",
-    "options": {}
-  },
-  "chambre": {
-    "text": "Il repensa soudain à tous les moments qu’ils avaient passés dans le lit craquelant.",
-    "options": {}
-  },
-  "end": {
-    "text": "La dernière fraise lui glissa dans la gorge. Cela faisait si longtemps déjà. Peut-être était-il temps de lui écrire ?",
-    "options": {}
-  },
-  "barquette": {
-    "text": "\"La barquette en plastique, légère et pratique, transportait son déjeuner avec simplicité.\"",
-    "options": {}
-  },
-  "sauvages.": {
-    "text": "Dans l'immensité des forêts sauvages, la nature règne en maître.",
-    "options": {}
-  },
-  "simplicité.\"": {
-    "text": "La simplicité est la sophistication suprême.",
-    "options": {}
-  },
-  "suprême.": {
-    "text": "Dans l'immensité du silence, il atteignit l'instant suprême.",
-    "options": {}
-  },
-  "chalet.": {
-    "text": "Un chalet isolé dans les montagnes, où le temps semble s'arrêter.",
-    "options": {}
-  },
-  "vieux": {
-    "text": "Le vieux chien se reposait paisiblement sous le grand chêne.",
-    "options": {}
-  },
-  "elle.": {
-    "text": "Elle brille sous le soleil de midi.",
-    "options": {}
-  },
-  "odeurs": {
-    "text": "Les odeurs du matin flottent, légères et envoûtantes.",
-    "options": {}
-  },
-  "matin": {
-    "text": "Le matin se lève, apportant avec lui une nouvelle page blanche à remplir.",
-    "options": {}
-  },
-  "blanche": {
-    "text": "Neige blanche.",
-    "options": {}
-  },
-  "Neige": {
-    "text": "La neige tombe doucement, recouvrant le sol d'un manteau blanc et silencieux.",
-    "options": {}
-  },
-  "manteau": {
-    "text": "Le manteau, ce vêtement qui enveloppe nos hivers de douceur et de mystère.",
-    "options": {}
-  },
-  "moins": {
-    "text": "Parfois, moins c'est plus.",
-    "options": {}
-  },
-  "désormais": {
-    "text": "Désormais, le monde s'ouvre à de nouvelles possibilités.",
-    "options": {}
-  },
-  "Il": {
-    "text": "Il\" est un pronom personnel sujet qui peut être utilisé de nombreuses façons dans une phrase. Voici une phrase simple et unique utilisant \"il\" :\n\n\"Il marche sous la pluie, indifférent aux gouttes qui glissent sur son visage.",
-    "options": {}
-  },
-  "bruns": {
-    "text": "Les bruns de ses yeux reflétaient la chaleur d'un coucher de soleil d'automne.",
-    "options": {}
-  },
-  "chaleur": {
-    "text": "Sous le soleil de midi, la chaleur enveloppait tout, rendant l'air presque palpable.",
-    "options": {}
-  },
-  "l'air": {
-    "text": "L'air frais du matin caressait doucement les feuilles des arbres.",
-    "options": {}
-  },
-  "caressait": {
-    "text": "Le vent caressait doucement les feuilles des arbres.",
-    "options": {}
-  },
-  "arbres.": {
-    "text": "Les arbres dansent avec le vent, murmurant des secrets anciens aux oreilles de la forêt.",
-    "options": {}
-  },
-  "croquait": {
-    "text": "Il croquait la vie à pleines dents, savourant chaque instant comme une gourmandise.",
-    "options": {}
-  },
-  "gourmandise.": {
-    "text": "La gourmandise est un péché mignon qui chatouille les papilles et réjouit le cœur.",
-    "options": {}
-  },
-  "cœur.": {
-    "text": "Le cœur bat au rythme de nos émotions.",
-    "options": {}
-  },
-  "entier.": {
-    "text": "Un entier, c'est un nombre sans fractions, complet et indivisible.",
-    "options": {}
-  },
-  "montagnes,": {
-    "text": "Sous le ciel infini, les montagnes se dressent, silencieuses et majestueuses.",
-    "options": {}
-  },
-  "silencieuses": {
-    "text": "Les étoiles sont des poètes silencieuses qui écrivent leur histoire dans le ciel chaque nuit.",
-    "options": {}
-  },
-  "histoire": {
-    "text": "L'histoire est un éternel recommencement.",
-    "options": {}
-  },
-  "éternel": {
-    "text": "L'éternel est un instant qui n'en finit pas.",
-    "options": {}
-  },
-  "pas.": {
-    "text": "Pas à pas, le chemin se trace.",
-    "options": {}
-  },
-  "sophistication": {
-    "text": "La sophistication se révèle dans l'art subtil de transformer le simple en élégance intemporelle.",
-    "options": {}
-  },
-  "élégance": {
-    "text": "L'élégance est la beauté qui persiste dans le temps, une harmonie discrète entre l'être et le paraître.",
-    "options": {}
-  },
-  "chêne.": {
-    "text": "Sous l'ombre du chêne centenaire, le temps semble suspendu.",
-    "options": {}
-  },
-  "des": {
-    "text": "Le désert s'étendait à perte de vue, immaculé et silencieux.",
-    "options": {}
-  },
-  "perte": {
-    "text": "La perte d'un être cher laisse un vide que le temps seul peut combler.",
-    "options": {}
-  },
-  "temps": {
-    "text": "Le temps passe, inexorable, emportant tout sur son passage.",
-    "options": {}
-  },
-  "repensait": {
-    "text": "Il repensait à ses choix, sous la lumière déclinante du soir.",
-    "options": {}
-  },
-  "soir.": {
-    "text": "Le soleil se couche, annonçant une soirée paisible.",
-    "options": {}
-  },
-  "inexorable,": {
-    "text": "Le temps passe, inexorable, emportant tout sur son passage.",
-    "options": {}
-  },
-  "toujours": {
-    "text": "Toujours là, comme un phare dans la nuit.",
-    "options": {}
-  }
+  ]
 }
