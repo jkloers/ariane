@@ -1,0 +1,100 @@
+{
+  "id": "start",
+  "text": "Le goût des fraises lui rappelait toujours le vieux chalet.",
+  "options": {
+    "goût": "d6243fff-2f0b-460a-b4dd-5b64f5f28269",
+    "fraises": "dd2bcd96-a166-45b8-aec3-fbeadc77d8b3",
+    "rappelait": "21c6707f-d985-4f4a-9500-748a0af2459c",
+    "chalet": "1b8c1cc5-a275-41c0-a211-74d632b50403"
+  },
+  "children": [
+    {
+      "id": "d6243fff-2f0b-460a-b4dd-5b64f5f28269",
+      "text": "D’habitude, sa mémoire s’attachait plutôt aux odeurs : chaque été il repensait par exemple à son parfum à elle.",
+      "options": {
+        "été": "853fb2ed-04be-4b04-91ff-3f85c79be054",
+        "elle": "6ecbeaea-bdde-4366-8315-f04df3dcc308"
+      },
+      "children": [
+        {
+          "id": "853fb2ed-04be-4b04-91ff-3f85c79be054",
+          "text": "Les fraises sauvages qu’ils cueillaient ensemble en juin étaient évidemment plus sucrées et plus savoureuses que celles du supermarché qu’il dévorait en ce moment.",
+          "options": {},
+          "children": []
+        },
+        {
+          "id": "6ecbeaea-bdde-4366-8315-f04df3dcc308",
+          "text": "Depuis combien de temps n’avait-il pas pensé à elle ? Des mois, des années ?",
+          "options": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "dd2bcd96-a166-45b8-aec3-fbeadc77d8b3",
+      "text": "Il regarda de nouveau les fraises gisant dans la barquette : il ne les croquait jamais en entier.",
+      "options": {
+        "jamais": "6d8913f6-e67e-4e1a-9527-4bd50d3736de",
+        "entier": "ab7d8595-6593-4ae9-8f86-b3cc89e3bb3b"
+      },
+      "children": [
+        {
+          "id": "6d8913f6-e67e-4e1a-9527-4bd50d3736de",
+          "text": "Parfois, il lui semblait difficile de croire qu’il ne la reverrai jamais plus.",
+          "options": {},
+          "children": []
+        },
+        {
+          "id": "ab7d8595-6593-4ae9-8f86-b3cc89e3bb3b",
+          "text": "Il y a des choses que l’on n’est pas capable de finir soi-même.",
+          "options": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "21c6707f-d985-4f4a-9500-748a0af2459c",
+      "text": "Étrangement il ne se rappelait désormais moins de son visage que du goût des fraises sauvages.",
+      "options": {
+        "Étrangement": "b59db2e4-ab3f-43c0-a371-08e0f2bc2286",
+        "visage": "e64172be-506e-4eb6-b6f0-eb0456be406a"
+      },
+      "children": [
+        {
+          "id": "b59db2e4-ab3f-43c0-a371-08e0f2bc2286",
+          "text": "Ainsi les gens que l’on quitte finissent-ils par nous devenir étranger.",
+          "options": {},
+          "children": []
+        },
+        {
+          "id": "e64172be-506e-4eb6-b6f0-eb0456be406a",
+          "text": "Avait-elle les yeux bruns ? Ou noisettes ? Ou kakis ? Impossible de se souvenir.",
+          "options": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "1b8c1cc5-a275-41c0-a211-74d632b50403",
+      "text": "Il faisait toujours frais dans le chalet, sauf dans la chambre du grenier.",
+      "options": {
+        "frais": "748ab3e5-0780-410a-9e43-80616c13cad9",
+        "chambre": "8d6e3945-ad75-4e99-9ccb-1b8f53405476"
+      },
+      "children": [
+        {
+          "id": "748ab3e5-0780-410a-9e43-80616c13cad9",
+          "text": "Les jours d’été, ils pouvaient y passer toute l’après-midi ensemble à ne rien faire, abrités de la chaleur.",
+          "options": {},
+          "children": []
+        },
+        {
+          "id": "8d6e3945-ad75-4e99-9ccb-1b8f53405476",
+          "text": "Il repensa soudain à tous les moments qu’ils avaient passés dans le lit craquelant.",
+          "options": {},
+          "children": []
+        }
+      ]
+    }
+  ]
+}

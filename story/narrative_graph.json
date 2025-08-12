@@ -119,5 +119,113 @@
   "manteau": {
     "text": "Le manteau, ce vêtement qui enveloppe nos hivers de douceur et de mystère.",
     "options": {}
+  },
+  "moins": {
+    "text": "Parfois, moins c'est plus.",
+    "options": {}
+  },
+  "désormais": {
+    "text": "Désormais, le monde s'ouvre à de nouvelles possibilités.",
+    "options": {}
+  },
+  "Il": {
+    "text": "Il\" est un pronom personnel sujet qui peut être utilisé de nombreuses façons dans une phrase. Voici une phrase simple et unique utilisant \"il\" :\n\n\"Il marche sous la pluie, indifférent aux gouttes qui glissent sur son visage.",
+    "options": {}
+  },
+  "bruns": {
+    "text": "Les bruns de ses yeux reflétaient la chaleur d'un coucher de soleil d'automne.",
+    "options": {}
+  },
+  "chaleur": {
+    "text": "Sous le soleil de midi, la chaleur enveloppait tout, rendant l'air presque palpable.",
+    "options": {}
+  },
+  "l'air": {
+    "text": "L'air frais du matin caressait doucement les feuilles des arbres.",
+    "options": {}
+  },
+  "caressait": {
+    "text": "Le vent caressait doucement les feuilles des arbres.",
+    "options": {}
+  },
+  "arbres.": {
+    "text": "Les arbres dansent avec le vent, murmurant des secrets anciens aux oreilles de la forêt.",
+    "options": {}
+  },
+  "croquait": {
+    "text": "Il croquait la vie à pleines dents, savourant chaque instant comme une gourmandise.",
+    "options": {}
+  },
+  "gourmandise.": {
+    "text": "La gourmandise est un péché mignon qui chatouille les papilles et réjouit le cœur.",
+    "options": {}
+  },
+  "cœur.": {
+    "text": "Le cœur bat au rythme de nos émotions.",
+    "options": {}
+  },
+  "entier.": {
+    "text": "Un entier, c'est un nombre sans fractions, complet et indivisible.",
+    "options": {}
+  },
+  "montagnes,": {
+    "text": "Sous le ciel infini, les montagnes se dressent, silencieuses et majestueuses.",
+    "options": {}
+  },
+  "silencieuses": {
+    "text": "Les étoiles sont des poètes silencieuses qui écrivent leur histoire dans le ciel chaque nuit.",
+    "options": {}
+  },
+  "histoire": {
+    "text": "L'histoire est un éternel recommencement.",
+    "options": {}
+  },
+  "éternel": {
+    "text": "L'éternel est un instant qui n'en finit pas.",
+    "options": {}
+  },
+  "pas.": {
+    "text": "Pas à pas, le chemin se trace.",
+    "options": {}
+  },
+  "sophistication": {
+    "text": "La sophistication se révèle dans l'art subtil de transformer le simple en élégance intemporelle.",
+    "options": {}
+  },
+  "élégance": {
+    "text": "L'élégance est la beauté qui persiste dans le temps, une harmonie discrète entre l'être et le paraître.",
+    "options": {}
+  },
+  "chêne.": {
+    "text": "Sous l'ombre du chêne centenaire, le temps semble suspendu.",
+    "options": {}
+  },
+  "des": {
+    "text": "Le désert s'étendait à perte de vue, immaculé et silencieux.",
+    "options": {}
+  },
+  "perte": {
+    "text": "La perte d'un être cher laisse un vide que le temps seul peut combler.",
+    "options": {}
+  },
+  "temps": {
+    "text": "Le temps passe, inexorable, emportant tout sur son passage.",
+    "options": {}
+  },
+  "repensait": {
+    "text": "Il repensait à ses choix, sous la lumière déclinante du soir.",
+    "options": {}
+  },
+  "soir.": {
+    "text": "Le soleil se couche, annonçant une soirée paisible.",
+    "options": {}
+  },
+  "inexorable,": {
+    "text": "Le temps passe, inexorable, emportant tout sur son passage.",
+    "options": {}
+  },
+  "toujours": {
+    "text": "Toujours là, comme un phare dans la nuit.",
+    "options": {}
   }
 }
