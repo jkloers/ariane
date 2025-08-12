@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     try {
-      const res = await fetch(`/continue?node=${encodeURIComponent(nodeName)}`);
+      const res = await fetch(`/continue?node_id=${encodeURIComponent(nodeName)}`);
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
       const data = await res.json(); // { text: "...", options: { mot: "id_noeud" } }
       displayStory(data);
@@ -85,17 +85,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const nextNode = e.target.dataset.node;
 
       if (nextNode) {
+        // Si le mot existe déjà comme enfant, on affiche simplement la phrase associée
         loadNode(nextNode);
       } else {
-        // expansion si mot pas dans options
+        // Sinon, on génère une nouvelle branche
         const res = await fetch('/expand', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ from_node: currentNode, word })
+          body: JSON.stringify({ parent_id: currentNode, word })
         });
         if (res.ok) {
-          const data = await res.json(); // { next: { text: "...", options: {...} } }
-          displayStory(data.next);
+          const data = await res.json(); // data is the new node
+          displayStory(data);
           visitedNodes.add(word);
           updateVisitedNodes();
         } else {
